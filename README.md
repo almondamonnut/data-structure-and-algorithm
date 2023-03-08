@@ -7,7 +7,7 @@ https://www.hackerearth.com/practice/notes/standard-template-library/?fbclid=IwA
 
 
 
-# some useful trips using VS code to write c++
+# some useful tips using VS code to write c++
 1. To add launch.json in case it doesn't appear, go to tool bar, select Run -> Add Configuration..
 
 2. Under .vscode folder, there is a launch.json file. There you can delete all and add a configuration to reselect which compiler to use
