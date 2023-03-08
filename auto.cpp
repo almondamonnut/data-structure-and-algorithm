@@ -1,6 +1,6 @@
 // this program is to study how auto in c++ works
 // this program is baesd on Geeks for Geeks website.
-// and also study a little bit of booleen value.
+// and also study a little bit of boolean value.
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -16,12 +16,13 @@ int main()
     auto ptr = &x;
     auto ptrs = &s;
     auto b = false;
+    
     cout << typeid(x).name() << endl //i (integer)
          << typeid(f).name() << endl //d (double)
          << typeid(y).name() << endl //d (double)
          << typeid(ptr).name() << endl //Pi (Pointer to integer)
          << typeid(ptrs).name() << endl //Pc (pointer to character)
-         << typeid(b).name() << endl //b (booleen)
+         << typeid(b).name() << endl //b (boolean)
          << b << endl;
 
     if (b == 0){
