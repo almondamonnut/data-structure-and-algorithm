@@ -1,6 +1,7 @@
 // This is an implementation of Breadth First Search
 // Breadth First Search is used to search an entire graph
 // based on Geeks for geeks website
+// This assumes that all the nodes are reachable by the starting node.
 
 // Time complexity is O(V+E) when V=#nodes, E=#edges
 
