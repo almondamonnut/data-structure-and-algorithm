@@ -1,5 +1,8 @@
 // This is an implementation of Breadth First Search
+// Breadth First Search is used to search an entire graph
 // based on Geeks for geeks website
+
+// Time complexity is O(V+E) when V=#nodes, E=#edges
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,6 +41,41 @@ void Graph::BFS(int s) {
 
     // Mark the current node as visited and enqueue it
     visited[s] = true;
-    queue.push_back(s);
+    queue.push_back(s); //O(1)
+    
+    // Loop to get the first queue out and visit the neighbors
+    while(!queue.empty()) {
+        // get the first one out of the queue
+        s = queue.front(); //O(1)
+        cout << s << " ";
+        queue.pop_front(); //O(1)
 
+        // get all neighbors of s into the queue and mark visited if they've never been visted
+        for (auto adjacent : adj[s]) {
+            if (visited[adjacent] == false) {
+                visited[adjacent] = true;
+                queue.push_back(adjacent);
+            }
+        }
+    }
+}
+
+// test the search
+int main()
+{
+    Graph g(5);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 0);
+    g.addEdge(1, 2);
+    g.addEdge(1, 3);
+    g.addEdge(2, 0);
+    g.addEdge(2, 1);
+    g.addEdge(2, 4);
+    g.addEdge(3, 1);
+    g.addEdge(3, 4);
+    g.addEdge(4, 2);
+    g.addEdge(4, 3);
+
+    g.BFS(0);
 }
