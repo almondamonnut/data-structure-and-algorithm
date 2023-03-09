@@ -33,6 +33,8 @@ int main() {
     cout << car1.year << " " << car2.year << endl;
 
     // using named structure
+    // both stating struct and not is ok for named struct
+    struct myCar car3;
     myCar car3;
     car3.model = "catkung";
     cout << car3.model;
