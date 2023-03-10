@@ -1,6 +1,8 @@
 // This code is to learn the concept of malloc in c++
 // malloc is to allocate a block of memory to a pointer
 
+// more about malloc in arrow.cpp file
+
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
