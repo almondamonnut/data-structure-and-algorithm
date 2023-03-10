@@ -17,4 +17,7 @@ int main() {
     food = "jam";
     func(&food); // or you can also pass an adress directly
     cout << "  " << food;
+
+    int* ptr1;
+    cout << ptr1;
 }
