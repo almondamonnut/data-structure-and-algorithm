@@ -1,4 +1,4 @@
-// Tis is a study of queue data structure in c++
+// This is a study of queue data structure in c++
 // based on Geeks for Geeks
 
 #include<bits/stdc++.h>
