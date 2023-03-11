@@ -10,9 +10,10 @@ int main() {
     map<string, int> map_a;
 
     // Insert values into the map;
-    map["one"] = 1;
-    map["two"] = 2;
-    map["three"] = 3;
+    map_a["one"] = 1;
+    map_a["two"] = 2;
+    map_a["three"] = 3;
 
-    // get an iterator pointingto the first element in the map
+    // get an iterator pointing to the first element in the map
+    
 }
