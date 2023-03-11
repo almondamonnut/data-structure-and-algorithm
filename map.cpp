@@ -15,5 +15,5 @@ int main() {
     map_a["three"] = 3;
 
     // get an iterator pointing to the first element in the map
-    
+    map<string, int>::iterator it = map_a.begin();
 }
