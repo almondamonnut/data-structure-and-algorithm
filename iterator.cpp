@@ -10,4 +10,8 @@ int main() {
     
     // Declaring iterator to a vector
     vector<int>::iterator ptr;
+    
+    // display vector element s=using begin() and end()
+    for (ptr = ar.begin(); ptr < ar.end(); ptr++)
+        cout << *ptr << " ";
 }
