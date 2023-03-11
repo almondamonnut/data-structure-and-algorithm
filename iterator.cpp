@@ -10,8 +10,12 @@ int main() {
     
     // Declaring iterator to a vector
     vector<int>::iterator ptr;
+    // iterator is inside the class vector is STL
     
     // display vector element s=using begin() and end()
     for (ptr = ar.begin(); ptr < ar.end(); ptr++)
         cout << *ptr << " ";
 }
+
+// more study about iterator in map.cpp
+// there I used map<type1,type2>::iterator name_of_iterator
