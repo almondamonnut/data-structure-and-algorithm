@@ -46,6 +46,8 @@ void Graph::DFS(int v)
 }
 
 void Graph::DFS_loop(int start) {
+    cout << endl << "in DFS_loop" << endl;
+    
     stack<int> st;
     st.push(start);
 
@@ -55,6 +57,7 @@ void Graph::DFS_loop(int start) {
         if(!visited[curr]) {
             visited[curr] = true;
             cout << curr << " ";
+
             for (int i = adj[curr].size()-1; i >= 0; i--) {
                 int neighbor = adj[curr][i];
                 if(!visited[neighbor]) {
