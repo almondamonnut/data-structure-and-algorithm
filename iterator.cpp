@@ -15,6 +15,7 @@ int main() {
     // display vector element s=using begin() and end()
     for (ptr = ar.begin(); ptr < ar.end(); ptr++)
         cout << *ptr << " ";
+        // in the case of vector, iterator is use as if it's a normal pointer
 }
 
 // more study about iterator in map.cpp

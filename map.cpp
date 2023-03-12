@@ -16,4 +16,12 @@ int main() {
 
     // get an iterator pointing to the first element in the map
     map<string, int>::iterator it = map_a.begin();
+
+    while (it != map_a.end())
+    {
+        cout << "key: " << it->first << ", value: " << it->second << endl;
+        ++it;
+    }
+    // In case of map,we need to use arrow operator to point to
+    // first and second, where first is the key and second is the value
 }
