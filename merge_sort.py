@@ -4,7 +4,7 @@ from numpy import random
 import numpy as np
 
 def mergesort(arr):
-    print("call merge sort of arr",arr)
+    # print("call merge sort of arr",arr)
     if(len(arr)==1):
         print("return arr",arr)
         return arr
@@ -18,9 +18,9 @@ def mergesort(arr):
     else:
         # cut and sort first
         arr_1 = mergesort(arr[:int(len(arr)/2)])
-        print("arr_1=",arr_1)
+        # print("arr_1=",arr_1)
         arr_2 = mergesort(arr[int(len(arr)/2):])
-        print("arr_2=",arr_2)
+        # print("arr_2=",arr_2)
 
         i = j = 0
         arr_ans = []
@@ -42,6 +42,6 @@ def mergesort(arr):
 
 
 
-arr = random.randint(20, size=20)
+arr = random.randint(100, size=100)
 print("arr =",arr)
 print("sorted array =",mergesort(arr))
