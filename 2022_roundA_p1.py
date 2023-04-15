@@ -96,6 +96,7 @@ for i in range(n):
                 modified_text[i] = modified_text[i][:jj] + modified_text[i][jj]*hold + modified_text[i][jj:]
                 jj += hold
                 hold = 1
+            # ถ้าซ้ำแบบสุดท้ายมากกว่า reset hold
             else:
                 hold = 1
         jj+=1
