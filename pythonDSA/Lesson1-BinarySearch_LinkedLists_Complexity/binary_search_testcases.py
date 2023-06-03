@@ -80,3 +80,12 @@ tests.append({
     },
     'output' : [None]
 })
+
+# 2.10 add large data to see execution time (90M data)
+tests.append({
+    'input': {
+        'cards_list': sorted([i for i in range(90000001)], reverse=True),
+        'query_num' : 90000000
+    },
+    'output' : [0]
+})
